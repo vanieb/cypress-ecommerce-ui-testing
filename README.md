@@ -58,15 +58,13 @@ cypress-ecommerce-ui-testing/
 │       ├── assertions.js
 │       ├── testData.js
 │       └── e2e.js
-├── docs/
-│   └── images/
-│       └── test-report.png
 ├── .github/
 │   └── workflows/
 ├── cypress.config.js
 ├── package.json
 ├── pnpm-lock.yaml
 └── README.md
+└── test-report.png
 ```
 
 Generated Mochawesome reports, screenshots, videos, and installed dependencies are excluded from version control.
