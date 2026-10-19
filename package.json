@@ -1,0 +1,27 @@
+{
+  "name": "cypress-ecommerce-ui-testing",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "description": "Ecommerce UI testing",
+  "author": "Vanessa Joy Weng",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "cy:open": "cypress open --e2e",
+    "test": "cypress run --browser electron",
+    "test:chrome": "cypress run --browser chrome",
+    "test:login": "cypress run --spec cypress/e2e/login.cy.js",
+    "test:checkout": "cypress run --spec cypress/e2e/checkout.cy.js",
+    "test:report": "cypress run --browser electron --reporter mochawesome --reporter-options reportDir=cypress/reports/json,overwrite=false,html=false,json=true",
+    "report:generate": "mochawesome-merge \"cypress/reports/json/*.json\" > cypress/reports/merged.json && marge cypress/reports/merged.json --reportDir cypress/reports/html --reportFilename index",
+    "report": "pnpm run test:report; pnpm run report:generate"
+  },
+  "devDependencies": {
+    "cypress": "16.2.0",
+    "mochawesome": "^8.1.1",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
+  }
+}

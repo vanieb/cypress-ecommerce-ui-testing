@@ -1,0 +1,8 @@
+{
+  "customer": {
+    "firstName": "QA",
+    "lastName": "Portfolio",
+    "postalCode": "12345"
+  },
+  "taxRate": 0.08
+}
