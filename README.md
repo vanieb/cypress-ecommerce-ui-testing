@@ -1,6 +1,9 @@
 # SauceDemo E-Commerce UI Regression Testing
+[![Cypress E2E Tests](https://github.com/vanieb/cypress-ecommerce-ui-testing/actions/workflows/cypress.yml/badge.svg)](https://github.com/vanieb/cypress-ecommerce-ui-testing/actions/workflows/cypress.yml)
 
 **Cypress + JavaScript | 37 Automated Test Scenarios | 5 Modules**
+
+
 
 A web UI automation portfolio project demonstrating functional and regression testing of [SauceDemo](https://www.saucedemo.com/), a public e-commerce practice application.
 
@@ -60,6 +63,7 @@ cypress-ecommerce-ui-testing/
 │       └── e2e.js
 ├── .github/
 │   └── workflows/
+│       └── cypress.yml
 ├── cypress.config.js
 ├── package.json
 ├── pnpm-lock.yaml
@@ -153,7 +157,7 @@ All 37 automated test scenarios passed in the captured local execution. These re
 
 ## Continuous Integration
 
-The project includes GitHub Actions workflow configuration for automated Cypress regression testing.
+This project uses GitHub Actions to automatically execute Cypress end-to-end regression tests.
 
 The intended CI workflow supports:
 
@@ -162,7 +166,7 @@ The intended CI workflow supports:
 - Test result reporting
 - Screenshot and video artifacts for troubleshooting
 
-**CI execution status:** GitHub Actions execution has not yet been verified. Local execution results are documented above.
+**CI execution status:** Successfully executed through GitHub Actions.
 
 ## Testing Scope and Limitations
 
